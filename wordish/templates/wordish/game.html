@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wordish</title>
+    <link rel="stylesheet" href="../../static/wordish/wordish.css">
+  </head>
+
+  <body>
+    <br>
+    <div class="status" id="status">
+      {{ status }}
+    </div>
+    <div>
+      <table class="grid" id="matrix">
+        {% for row in matrix %}
+          <tr>
+          {% for cell in row %}
+            <td class="cell" id="{{ cell.id }}" {% if cell.color %}style="background-color: {{ cell.color }};"{% endif %}> {{cell.letter}} </td>
+          {% endfor %}
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div id="user_input_div">
+      <form class="user_input_form" action="/guess" method="POST">
+        <label id="guess_label" for="guess_text" class="label">Guess:</label>
+        <input id="guess_text" type="text" name="new-guess" class="guess">
+        <button id="guess_button" name="submit_button" type="submit" value="Submit">Submit</button>
+        <input type="hidden" name="target" value="{{ target }}">
+        <!-- <input type="hidden" name="old_guesses" value="{{ old_guesses|safe }}"> -->
+        <input type="hidden" name="old_guesses" value="{{ old_guesses|join:',' }}">
+        <br>
+        {% csrf_token %}
+      </form>
+    </div>
+    <div class="score" id="score">
+      <label class="label" id="score_label" name="attempts">Attempt: {{ attempts }} / 6</label>
+    </div>
+  </body>
+</html>

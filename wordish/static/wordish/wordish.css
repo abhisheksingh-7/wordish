@@ -1,0 +1,98 @@
+.status, .message {
+  background-color: lightgrey;
+  width: 20vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-width: 0.1em;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding: 0.5em;
+}
+
+.grid {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#target_text, #guess_text {
+  width: 5em;
+  height: 3em;
+  margin: auto;
+  font-size: 15px;
+  text-align: center;
+}
+
+#guess_button, #start_button {
+  margin: auto;
+  font-size: 15px;
+  width: 5em;
+  height: 3em;
+  font-weight: bold;
+}
+
+.input_form, .user_input_form {
+  background-color: lightgrey;
+  width: 20vw;
+  padding: 0.5em;
+  border-width: 0.1em;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.input[type="text"] {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  pad: 0.5em;
+}
+
+.cell {
+  align-items: center;
+  background-color: white;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  height: 25px;
+  width: 25px;
+  margin: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: auto;
+  padding: 5px;
+}
+
+.guess, .target {
+  width: 60px;
+}
+
+.user_input, .init_game, .label {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+body {
+  width: 25vw;
+  height: 30vw;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  align-items: center;
+  margin: 10px auto;
+}
