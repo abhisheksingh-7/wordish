@@ -2,7 +2,7 @@
 Simple webapp to play Wordish, implemented in Django, containing validations for csrf, xss.
 
 # usage
-- clone the app: `git clone https://github.com/abhisheksingh-7/wordish.git`
+- clone the repo: `git clone https://github.com/abhisheksingh-7/wordish.git`
 - run migration: `python manage.py migrate`
 - launch server: `python manage.py runserver`
 
