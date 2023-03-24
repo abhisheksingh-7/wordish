@@ -1,5 +1,5 @@
 # wordish
-Simple webapp to play Wordish, implemented in Django, containing validations for csrf, xss.
+Simple webapp to play Wordle, implemented in Django, containing validations for csrf, xss.
 
 # usage
 - clone the repo: `git clone https://github.com/abhisheksingh-7/wordish.git`
